@@ -1,0 +1,21 @@
+mode: set
+unit-test-primeapp/main.go:12.13,30.2 6 0
+unit-test-primeapp/main.go:32.14,37.2 4 1
+unit-test-primeapp/main.go:39.15,41.2 1 1
+unit-test-primeapp/main.go:43.54,46.6 2 1
+unit-test-primeapp/main.go:46.6,49.11 2 1
+unit-test-primeapp/main.go:49.11,52.4 2 1
+unit-test-primeapp/main.go:54.3,55.11 2 1
+unit-test-primeapp/main.go:59.58,64.44 2 1
+unit-test-primeapp/main.go:64.44,66.3 1 1
+unit-test-primeapp/main.go:69.2,70.16 2 1
+unit-test-primeapp/main.go:70.16,72.3 1 1
+unit-test-primeapp/main.go:74.2,76.19 2 1
+unit-test-primeapp/main.go:79.36,81.22 1 1
+unit-test-primeapp/main.go:81.22,83.3 1 1
+unit-test-primeapp/main.go:86.2,86.11 1 1
+unit-test-primeapp/main.go:86.11,88.3 1 1
+unit-test-primeapp/main.go:91.2,91.28 1 1
+unit-test-primeapp/main.go:91.28,92.15 1 1
+unit-test-primeapp/main.go:92.15,95.4 1 1
+unit-test-primeapp/main.go:98.2,98.54 1 1
