@@ -8,16 +8,16 @@ import (
 type application struct{}
 
 func main() {
-	//set up an app config
+	// set up an app config
 	app := application{}
 
-	//get application routes
+	// get application routes
 	mux := app.routes()
 
-	//print out a message
+	// print out a message
 	log.Println("Starting server on port 8080...")
 
-	//start the server
+	// start the server
 	err := http.ListenAndServe(":8080", mux)
 	if err != nil {
 		log.Fatal(err)

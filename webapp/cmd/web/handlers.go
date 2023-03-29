@@ -20,8 +20,8 @@ type TemplateData struct {
 }
 
 func (app *application) render(w http.ResponseWriter, r *http.Request, t string, data *TemplateData) error {
-	//parse the template from disk
-	parsedTemplate, err := template.ParseFiles(path.Join(pathToTemplates + t))
+	// parse the template from disk.
+	parsedTemplate, err := template.ParseFiles(path.Join(pathToTemplates, t), path.Join(pathToTemplates, "base.layout.gohtml"))
 	if err != nil {
 		http.Error(w, "bad request", http.StatusBadRequest)
 		return err
@@ -29,7 +29,7 @@ func (app *application) render(w http.ResponseWriter, r *http.Request, t string,
 
 	data.IP = app.ipFromContext(r.Context())
 
-	//execute the template, passing it data, if any
+	// execute the template, passing it data, if any
 	err = parsedTemplate.Execute(w, data)
 	if err != nil {
 		return err
@@ -46,7 +46,7 @@ func (app *application) Login(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	//validate data
+	// validate data
 	form := NewForm(r.PostForm)
 	form.Required("email", "password")
 
