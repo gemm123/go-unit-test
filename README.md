@@ -13,4 +13,4 @@ run unit test for generage coverage.out
 show the coverage unit test in format html
 
 ## go tool cover -func=coverage.out
-show the coverage unit test every file
+show the coverage unit test every function
